@@ -16,9 +16,9 @@ jobs:
     - name: 'run npm'
       run: |
         npm install
-        npm run build
+      
     - uses: Azure/functions-action@v1
       id: fa
       with:
-        app-name: PLEASE_REPLACE_THIS_WITH_YOUR_FUNCTION_APP_NAME
+        app-name: Test-Function-App-Rami
         publish-profile: ${{ secrets.SCM_CREDENTIALS }}
